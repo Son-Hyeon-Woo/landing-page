@@ -41554,9 +41554,8 @@
 
 <script>
     window.addEventListener('load', function(){
+        window.history.replaceState(null, null, '/landing-page');
         document.querySelector('body').style.display='';
-
-
         document.querySelector("#__layout > div > div:nth-child(1) > div > div.d-flex.justify-content-center > div.AppPage > div.position-relative > div:nth-child(1) > div.AppBlock > div.AppButton.d-flex.justify-content-center.align-items-center.clickable > div").addEventListener('click',function(){
             alert('홍시를 만나고 싶으면 얼른 투표해주세요!');
         });
@@ -41564,6 +41563,7 @@
         document.querySelector("#__layout > div > div:nth-child(1) > div > div.d-flex.justify-content-center > div.AppPage > div.position-relative > div:nth-child(9) > div.AppBlock > div.AppButton.d-flex.justify-content-center.align-items-center.clickable > div").addEventListener('click',function(){
             alert('홍시를 만나고 싶으면 얼른 투표해주세요!');
         });
+        document.querySelector("#__layout > div > div:nth-child(1) > div > a").style.display='none';
 
     });
 </script>
