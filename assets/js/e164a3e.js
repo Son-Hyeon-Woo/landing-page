@@ -2391,14 +2391,14 @@
                             hostname: r,
                             subdomain: o
                         },
-                        props: {
-                            error: {
-                                response: {
-                                    status: 404,
-                                    statusText: "Not Found"
-                                }
-                            }
-                        },
+                        // props: {
+                        //     error: {
+                        //         response: {
+                        //             status: 404,
+                        //             statusText: "Not Found"
+                        //         }
+                        //     }
+                        // },
                         component: j.default
                     }]
                 }(0, r) : function customDomainRoutes(t, r) {
@@ -2431,14 +2431,14 @@
                         meta: {
                             domain: r
                         },
-                        props: {
-                            error: {
-                                response: {
-                                    status: 404,
-                                    statusText: "Not Found"
-                                }
-                            }
-                        },
+                        // props: {
+                        //     error: {
+                        //         response: {
+                        //             status: 404,
+                        //             statusText: "Not Found"
+                        //         }
+                        //     }
+                        // },
                         component: j.default
                     }]
                 }(0, r)
@@ -19962,7 +19962,7 @@
                                             O.next = 14;
                                             break
                                         }
-                                        // throw new Error("Not Found");
+                                        throw new Error("Not Found");
                                     case 14:
                                         if (u = m.id, _ = null === (o = m.config) || void 0 === o ? void 0 : o.abtest) {
                                             O.next = 18;
