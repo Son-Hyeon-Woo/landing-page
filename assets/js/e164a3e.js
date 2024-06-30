@@ -24580,6 +24580,9 @@
                 t && o.startsWith(t) && (o = o.slice(t.length));
                 var a = (o || "/") + window.location.search + window.location.hash;
                 var a = ("/") + window.location.search + window.location.hash;
+
+                console.log(o, a);
+
                 return Object(p.f)(a)
             }
 
