@@ -2391,14 +2391,14 @@
                             hostname: r,
                             subdomain: o
                         },
-                        // props: {
-                        //     error: {
-                        //         response: {
-                        //             status: 404,
-                        //             statusText: "Not Found"
-                        //         }
-                        //     }
-                        // },
+                        props: {
+                            error: {
+                                response: {
+                                    status: 404,
+                                    statusText: "Not Found"
+                                }
+                            }
+                        },
                         component: j.default
                     }]
                 }(0, r) : function customDomainRoutes(t, r) {
@@ -2431,14 +2431,14 @@
                         meta: {
                             domain: r
                         },
-                        // props: {
-                        //     error: {
-                        //         response: {
-                        //             status: 404,
-                        //             statusText: "Not Found"
-                        //         }
-                        //     }
-                        // },
+                        props: {
+                            error: {
+                                response: {
+                                    status: 404,
+                                    statusText: "Not Found"
+                                }
+                            }
+                        },
                         component: j.default
                     }]
                 }(0, r)
@@ -25676,18 +25676,18 @@
                                         return u = t.$pinia, l = t.route, p = t.error, d = t.$pageViewApi, h = t.$device, I.next = 3, Promise.resolve().then(o.bind(null, 370));
                                     case 3:
                                         return g = I.sent.default(u), I.next = 6, Promise.resolve().then(o.bind(null, 85));
-                                    case 6:
-                                        if (b = I.sent.default(u), w = function fail() {
-                                                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
-                                                return p({
-                                                    statusCode: 404,
-                                                    message: t
-                                                })
-                                            }, 0 !== (null === (r = l.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = l.meta[0]) || void 0 === a ? void 0 : a.subdomain)) {
-                                            I.next = 10;
-                                            break
-                                        }
-                                        return I.abrupt("return", w());
+                                    // case 6:
+                                    //     if (b = I.sent.default(u), w = function fail() {
+                                    //             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
+                                    //             return p({
+                                    //                 statusCode: 404,
+                                    //                 message: t
+                                    //             })
+                                    //         }, 0 !== (null === (r = l.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = l.meta[0]) || void 0 === a ? void 0 : a.subdomain)) {
+                                    //         I.next = 10;
+                                    //         break
+                                    //     }
+                                    //     return I.abrupt("return", w());
                                     case 10:
                                         return x = Object(m.c)(l), k = null === (i = l.meta[0]) || void 0 === i ? void 0 : i.hostname, O = null === (c = l.meta[0]) || void 0 === c ? void 0 : c.subdomain, A = null, I.prev = 14, I.next = 17, g.setABTestDataAndGetAppId({
                                             subdomain: O
@@ -26233,18 +26233,18 @@
                                         return c = t.route, u = t.params, l = t.error, p = t.$pageViewApi, d = t.$device, h = t.$pinia, P.next = 3, Promise.resolve().then(o.bind(null, 370));
                                     case 3:
                                         return m = P.sent.default(h), P.next = 6, Promise.resolve().then(o.bind(null, 85));
-                                    case 6:
-                                        if (_ = P.sent.default(h), b = function fail() {
-                                                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
-                                                return l({
-                                                    statusCode: 404,
-                                                    message: t
-                                                })
-                                            }, 0 !== (null === (r = c.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = c.meta[0]) || void 0 === a ? void 0 : a.subdomain)) {
-                                            P.next = 10;
-                                            break
-                                        }
-                                        return P.abrupt("return", b());
+                                    // case 6:
+                                    //     if (_ = P.sent.default(h), b = function fail() {
+                                    //             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
+                                    //             return l({
+                                    //                 statusCode: 404,
+                                    //                 message: t
+                                    //             })
+                                    //         }, 0 !== (null === (r = c.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = c.meta[0]) || void 0 === a ? void 0 : a.subdomain)) {
+                                    //         P.next = 10;
+                                    //         break
+                                    //     }
+                                    //     return P.abrupt("return", b());
                                     case 10:
                                         return w = null === (i = c.meta[0]) || void 0 === i ? void 0 : i.subdomain, x = null, k = u.pageId, P.prev = 13, P.next = 16, m.setABTestDataAndGetAppId({
                                             subdomain: w
@@ -26763,17 +26763,17 @@
                                         return c = t.$pinia, u = t.route, l = t.params, p = t.error, d = t.$pageViewApi, h = t.$device, R.next = 3, Promise.resolve().then(o.bind(null, 370));
                                     case 3:
                                         return m = R.sent.default(c), R.next = 6, Promise.resolve().then(o.bind(null, 85));
-                                    case 6:
-                                        if (_ = R.sent.default(c), b = function fail() {
-                                                return p({
-                                                    statusCode: 404,
-                                                    message: "Not Found"
-                                                })
-                                            }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.subdomain)) {
-                                            R.next = 10;
-                                            break
-                                        }
-                                        return R.abrupt("return", b());
+                                    // case 6:
+                                    //     if (_ = R.sent.default(c), b = function fail() {
+                                    //             return p({
+                                    //                 statusCode: 404,
+                                    //                 message: "Not Found"
+                                    //             })
+                                    //         }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.subdomain)) {
+                                    //         R.next = 10;
+                                    //         break
+                                    //     }
+                                    //     return R.abrupt("return", b());
                                     case 10:
                                         return w = null === (i = u.meta[0]) || void 0 === i ? void 0 : i.subdomain, R.prev = 11, m.setCurrentAppKey(w), R.next = 15, m.getAppSimpleBySubdomain({
                                             $api: t.$api,
@@ -28425,18 +28425,18 @@
                                         return c = t.$pinia, u = t.route, l = t.error, p = t.$pageViewApi, d = t.$device, T.next = 3, Promise.resolve().then(o.bind(null, 370));
                                     case 3:
                                         return h = T.sent.default(c), T.next = 6, Promise.resolve().then(o.bind(null, 85));
-                                    case 6:
-                                        if (y = T.sent.default(c), b = function fail() {
-                                                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
-                                                return l({
-                                                    statusCode: 404,
-                                                    message: t
-                                                })
-                                            }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.domain)) {
-                                            T.next = 10;
-                                            break
-                                        }
-                                        return T.abrupt("return", b());
+                                    // case 6:
+                                    //     if (y = T.sent.default(c), b = function fail() {
+                                    //             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
+                                    //             return l({
+                                    //                 statusCode: 404,
+                                    //                 message: t
+                                    //             })
+                                    //         }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.domain)) {
+                                    //         T.next = 10;
+                                    //         break
+                                    //     }
+                                    //     return T.abrupt("return", b());
                                     case 10:
                                         return w = Object(v.c)(u), x = null === (i = u.meta[0]) || void 0 === i ? void 0 : i.domain, k = null, T.prev = 13, T.next = 16, h.setABTestDataAndGetAppId({
                                             domain: x
@@ -28970,18 +28970,18 @@
                                         return c = t.$pinia, u = t.route, l = t.params, p = t.error, d = t.$pageViewApi, h = t.$device, P.next = 3, Promise.resolve().then(o.bind(null, 370));
                                     case 3:
                                         return m = P.sent.default(c), P.next = 6, Promise.resolve().then(o.bind(null, 85));
-                                    case 6:
-                                        if (_ = P.sent.default(c), b = function fail() {
-                                                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
-                                                return p({
-                                                    statusCode: 404,
-                                                    message: t
-                                                })
-                                            }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.domain)) {
-                                            P.next = 10;
-                                            break
-                                        }
-                                        return P.abrupt("return", b());
+                                    // case 6:
+                                    //     if (_ = P.sent.default(c), b = function fail() {
+                                    //             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Not Found";
+                                    //             return p({
+                                    //                 statusCode: 404,
+                                    //                 message: t
+                                    //             })
+                                    //         }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.domain)) {
+                                    //         P.next = 10;
+                                    //         break
+                                    //     }
+                                    //     return P.abrupt("return", b());
                                     case 10:
                                         return w = null === (i = u.meta[0]) || void 0 === i ? void 0 : i.domain, x = null, k = l.pageId, P.prev = 13, P.next = 16, m.setABTestDataAndGetAppId({
                                             domain: w
@@ -29500,17 +29500,17 @@
                                         return c = t.$pinia, u = t.route, l = t.params, p = t.error, d = t.$pageViewApi, h = t.$device, R.next = 3, Promise.resolve().then(o.bind(null, 370));
                                     case 3:
                                         return m = R.sent.default(c), R.next = 6, Promise.resolve().then(o.bind(null, 85));
-                                    case 6:
-                                        if (_ = R.sent.default(c), b = function fail() {
-                                                return p({
-                                                    statusCode: 404,
-                                                    message: "Not Found"
-                                                })
-                                            }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.domain)) {
-                                            R.next = 10;
-                                            break
-                                        }
-                                        return R.abrupt("return", b());
+                                    // case 6:
+                                    //     if (_ = R.sent.default(c), b = function fail() {
+                                    //             return p({
+                                    //                 statusCode: 404,
+                                    //                 message: "Not Found"
+                                    //             })
+                                    //         }, 0 !== (null === (r = u.meta) || void 0 === r ? void 0 : r.length) || null != (null === (a = u.meta[0]) || void 0 === a ? void 0 : a.domain)) {
+                                    //         R.next = 10;
+                                    //         break
+                                    //     }
+                                    //     return R.abrupt("return", b());
                                     case 10:
                                         return w = null === (i = u.meta[0]) || void 0 === i ? void 0 : i.domain, R.prev = 11, m.setCurrentAppKey(w), R.next = 15, m.getAppSimpleByDomain({
                                             $api: t.$api,
@@ -30315,11 +30315,11 @@
                                             break
                                         }
                                         return S.abrupt("return");
-                                    case 25:
-                                        return y.context.error({
-                                            statusCode: 404,
-                                            message: "This page could not be found"
-                                        }), S.abrupt("return", o());
+                                    // case 25:
+                                    //     return y.context.error({
+                                    //         statusCode: 404,
+                                    //         message: "This page could not be found"
+                                    //     }), S.abrupt("return", o());
                                     case 27:
                                         return h.forEach((function (t) {
                                             t._Ctor && t._Ctor.options && (t.options.asyncData = t._Ctor.options.asyncData, t.options.fetch = t._Ctor.options.fetch)
@@ -30395,10 +30395,10 @@
                                             S.next = 80;
                                             break
                                         }
-                                        return this.error({
-                                            statusCode: 404,
-                                            message: "This page could not be found"
-                                        }), S.abrupt("return", o());
+                                        // return this.error({
+                                        //     statusCode: 404,
+                                        //     message: "This page could not be found"
+                                        // }), S.abrupt("return", o());
                                     case 80:
                                         return S.next = 82, Promise.all(h.map(function () {
                                             var o = Object(a.a)(_regeneratorRuntime().mark((function _callee3(o, a) {
