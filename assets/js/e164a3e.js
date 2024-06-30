@@ -2356,8 +2356,6 @@
             }
 
             function fixRoutes(t, r) {
-                console.log('여기를 들어왔나요', t, r);
-                // alert(t, r);
                 return !r || "waveon.io" === r || "www.waveon.io" === r || "localhost:8080" === r || "localhost:3004" === r || r.match(/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):(\d{1,5})/) ? t : -1 !== r.indexOf(".waveon.io") || -1 !== r.indexOf(".waveon.me") || -1 !== r.indexOf(".staging.waveon.io") || -1 !== r.indexOf(".staging.waveon.me") || -1 !== r.indexOf(".localhost:8080") || -1 !== r.indexOf(".localhost:3004") ? function subDomainRoutes(t, r) {
                     var o = r.split(".", -1)[0].trim();
                     return [{
@@ -19964,7 +19962,7 @@
                                             O.next = 14;
                                             break
                                         }
-                                        throw new Error("Not Found");
+                                        // throw new Error("Not Found");
                                     case 14:
                                         if (u = m.id, _ = null === (o = m.config) || void 0 === o ? void 0 : o.abtest) {
                                             O.next = 18;
