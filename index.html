@@ -41553,6 +41553,14 @@
 </script>
 
 <script>
+
+
+function isMobile() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            // Check for mobile devices
+            return /android|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile/i.test(userAgent);
+        }
     window.addEventListener('load', function(){
         window.history.replaceState(null, null, '/landing-page');
         document.querySelector('body').style.display='';
@@ -41564,6 +41572,14 @@
             alert('홍시를 만나고 싶으면 얼른 투표해주세요!');
         });
         document.querySelector("#__layout > div > div:nth-child(1) > div > a").style.display='none';
+
+        if (isMobile()) {
+            document.querySelector('body').style.overflowX='hidden';
+            // Perform actions specific to mobile devices
+        } else {
+            // document.body.innerHTML = "<h1>Not a Mobile Device</h1>";
+            // Perform actions specific to non-mobile devices
+        }
 
     });
 </script>
